@@ -20,7 +20,7 @@ public class Crypto implements PaybleByInternet {
 
 	@Override
 	public double send_request_get_money() {
-		return this.money_amount;
+		return Math.round((this.money_amount) * 100d) / 100d;
 	}
 	
 }

@@ -23,7 +23,7 @@ public class Wallet implements Payble {
 	
 	@Override
 	public double get_money() {
-		return this.money_amount;
+		return Math.round((this.money_amount) * 100d) / 100d;
 	}
 
 }

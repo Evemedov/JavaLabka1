@@ -1,5 +1,7 @@
 package main;
 
+import java.math.BigDecimal;
+
 import payment_methods.Payble;
 import payment_methods.PaybleByInternet;
 
@@ -76,6 +78,10 @@ public class Terminal {
 			System.out.println("Введіть кількість коштів");
 			try {
 				money_amount_input = Main.scanner.nextDouble();
+				if(BigDecimal.valueOf(money_amount_input).scale() > 2) {
+					System.out.println("Введіть значення з двумя числами після коми");
+					continue;
+				}
 			}
 			catch(Exception ex) {
 				System.out.println("Введіть значення нормально");

@@ -8,7 +8,7 @@ public class Main {
 	public static Scanner scanner;
 	private static Terminal[] terminals = {new Terminal("Приватбанк", true, true), 
 			new Terminal("Монобанк", true, false), 
-			new Terminal("Спербанк", false, true)};
+			new Terminal("Ощадбанк", false, true)};
 	
 	//pay methods
 	public static Wallet wallet;
